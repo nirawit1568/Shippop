@@ -23,3 +23,10 @@ const copyArray = [...array]
 ## 1.3
 
 First Class Function - คือการที่เราสามารถที่จะเอา function ใส่ในตัวแปรได้เลย แล้วสามารถเรียกใช้งาน function นั้นผ่านชื่อตัวแปรได้เลย เช่น
+
+```
+var plus = function(a+b){
+    return a+b;
+}
+plus(1,2) จะมีค่าเท่ากับ 3
+```
