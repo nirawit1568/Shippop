@@ -3,9 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App {
+
+/* Navbar */
+.Navbar {
+  background-color: white;
   box-shadow: 1px 1px 10px grey;
   height: 80px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 1;
 }
 ul {
   list-style: none;
@@ -15,7 +22,7 @@ ul {
   justify-content: space-between;
 }
 li {
-  padding: 2em;
+  padding: 2em 1.3rem;
 }
 li img {
   width: 50px;
@@ -38,4 +45,226 @@ li a {
 .right-nav {
   display: flex;
   margin-right: 100px;
+  position: relative;
 }
+.list {
+  flex-direction: row;
+  display: flex;
+}
+.search {
+  margin-top: 15px;
+  width: 850px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: silver;
+  align-items: center;
+  display: flex;
+  color: gray;
+}
+.number {
+  position: absolute;
+  right: 108px;
+  top: 20px;
+  border-radius: 100%;
+  background-color: skyblue;
+  height: 20px;
+  width: 18px;
+  text-align: center;
+}
+/* Navbar */
+
+/* slide */
+
+.slide {
+  top: 80px;
+  margin-left: 130px;
+  margin-right: 130px;
+  width: 100% auto;
+  height: 400px;
+  background-color: silver;
+  position: relative;
+}
+.btn-left {
+  position: absolute;
+  top: 170px;
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 60%;
+  text-align: center;
+}
+.btn-right {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: gray;
+  top: 170px;
+  border-radius: 60%;
+}
+/* slide */
+
+/* bestSell and reccommend */
+.bestSell {
+  top: 150px;
+  margin-left: 130px;
+  margin-right: 130px;
+  position: relative;
+}
+.tittle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tittle h4 {
+  font-weight: bold;
+}
+.tittle p {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.book {
+  width: 220px;
+  height: 350px;
+}
+.none {
+  text-decoration: line-through;
+}
+.price {
+  font-weight: bold;
+}
+.star-review {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.star {
+  display: flex;
+}
+.review {
+  display: flex;
+}
+.shelf {
+  padding: 15px 30px;
+  display: flex;
+}
+.shelf p {
+  text-align: center;
+}
+.shelf a {
+  color: black;
+  text-decoration: none;
+}
+.book img {
+  width: 120px;
+  height: 150px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.book:hover {
+  box-shadow: 1px 1px 10px grey;
+}
+.addcart {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 140px;
+  height: 30px;
+  border-radius: 5%;
+  margin-left: 40px;
+}
+/* bestSell and reccommend*/
+
+/* book description */
+.description {
+  margin-top: 130px;
+  margin-left: 130px;
+  margin-right: 130px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left img:nth-child(3) {
+  width: 150px;
+  height: 200px;
+  filter: opacity(30%);
+}
+.left img:nth-child(2) {
+  width: 150px;
+  height: 200px;
+  margin-right: 10px;
+}
+.left img:nth-child(1) {
+  width: 400px;
+  height: 600px;
+  margin-bottom: 10px;
+}
+
+.left .right {
+  display: flex;
+}
+.right {
+  padding: 0rem 5rem;
+}
+.text p {
+  font-size: 20px;
+}
+.text strong {
+  font-size: 40px;
+}
+.text b {
+  text-decoration: line-through;
+  font-size: 25px;
+  color: gray;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+}
+.input {
+  width: 70px;
+  height: 40px;
+  background-color: silver;
+  text-align: center;
+}
+.add {
+  margin-left: 40px;
+  width: 200px;
+  height: 40px;
+  background-color: rgb(56, 125, 228);
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+.whitelist {
+  margin-left: 20px;
+  width: 200px;
+  height: 40px;
+  background-color: rgb(228, 125, 56);
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+.share {
+  margin-top: 40px;
+}
+.about {
+  margin-left: 130px;
+  margin-right: 130px;
+  display: flex;
+  flex-direction: row;
+}
+.about p {
+  margin-right: 30px;
+}
+.about p:nth-child(1) {
+  text-decoration: underline;
+}
+.desc {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+/* book description */
