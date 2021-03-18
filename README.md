@@ -30,3 +30,7 @@ var plus = function(a+b){
 }
 plus(1,2) จะมีค่าเท่ากับ 3
 ```
+
+## 2
+
+Normalization
