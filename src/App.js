@@ -6,7 +6,9 @@ import Navbar from './components/navBar';
 import Slide from './components/slide';
 import Reccom from './components/recommmend';
 import BestSell from './components/bestSell';
-import Book from './components/book'
+import Book from './components/book';
+import Cart from './components/cart';
+import Purchase from './components/purchase'
 import { useState } from 'react';
 
 function App() {
@@ -24,10 +26,10 @@ function App() {
           <Book set={setNumber} num={number}/>
         </Route>
         <Route exact path="/cart">
-
+          <Cart/>
         </Route>
         <Route exact path="/purchase">
-
+          <Purchase/>
         </Route>
       </div>
     </Router>

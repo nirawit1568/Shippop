@@ -12,9 +12,15 @@ function Book(props) {
         <div className="book-description">
             <div className="description">
                 <div className="left">
-                    <img src={book}></img>
-                    <img src={book}></img>
-                    <img src={book}></img>
+                    <div className="show">
+                        <img src={book}></img>
+                    </div>
+                    <div className="small">
+                        <div className="twopic">
+                            <img src={book}></img>
+                            <img src={book}></img> 
+                        </div>
+                    </div>
                 </div>
                 <div className="right">
                     <div className="text">
