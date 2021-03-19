@@ -23,7 +23,17 @@ const copyArray = [...array]
 
 ## 2
 
-Normalization
+Normalization - การปรับปรุง Schema ของ database ว่ามีการออกแบบการเก็บ Attribute ที่ดีแล้วหรือไม่
+แบ่งตามลำดับดังนี้
+1NF - ปรับ attribute ที่ซ้ำกันให้แยกออกจากกัน
+2NF - กำจัด Partial Dependency (แยกออกจากกันด้วย Primary Key ถ้ามีข้อมูลท่ีเก่ียวข้องกับ Primary Key น้ันๆ ในตาราง)
+3NF - กำจัด Transitive Dependency (ตารางที่มี Attribute ที่ไม่ใช่ Primary Key มีความสัมพันธ์กับ Attribute ที่ไม่ใช่ Primary Key)
+BCNF - กำจัด Candidate Key (ตารางท่ีมี Candidate Key เพียงแค่ตัวเดียว หากทำข้ันตอนท่ี 3NF แล้วเหลือ Candidate Key ตัวเดียว ถือว่าเข้าสู้ข้ัน BCNF เรียบร้อยแล้ว)
+4NF - กำจัด Mutivalued Dependency (ตารางที่ไม่มี Attribute ท่ีเป็น Primary Key ช้ีข้อมูลที่มีหลายค่า หลายคร้ังใน 1 ตาราง)
+5NF - การ Join Dependency แล้วได้ตารางที่เหมือนเดิม
+
+ปัญหาที่เคยเกิดขึ้น - ในตารางมีบาง attribute ที่มีค่ามากกว่า 1 ค่า ทำให้ยากในการนำข้อมูลไปใช้ต่อ
+วิธีแก้ปัญหา - ปรับ schema ให้ผ่านระดับ 1NF เพื่อที่จะสามารถนำข้อมูลไปใช้ได้อย่างง่าย
 
 ## 3
 
