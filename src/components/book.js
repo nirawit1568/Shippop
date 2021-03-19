@@ -4,7 +4,7 @@ import book from '../img/book.jpeg'
 
 function Book(props) {
     const [over,setOver] = useState(true);
-    const handleOver = () => setOver(true);
+    // const handleOver = () => setOver(true);
     const handleClick = () => {
         props.set(props.num+1);
     }
