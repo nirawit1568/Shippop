@@ -20,17 +20,11 @@ const array = [1,2,3,4,5]
 const copyArray = [...array]
 ```
 
-## 1.3
-
-First Class Function - คือการที่เราสามารถที่จะเอา function ใส่ในตัวแปรได้เลย แล้วสามารถเรียกใช้งาน function นั้นผ่านชื่อตัวแปรได้เลย เช่น
-
-```
-var plus = function(a+b){
-    return a+b;
-}
-plus(1,2) จะมีค่าเท่ากับ 3
-```
-
 ## 2
 
 Normalization
+
+## 3
+
+เลือกใช้เป็น React framework
+เข้าดูผลงานได้ตาม link ด้านล่าง
