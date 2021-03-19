@@ -18,6 +18,7 @@ function fullName(firstName,lastName){
 ```
 const array = [1,2,3,4,5]
 const copyArray = [...array]
+>> console.log(copyArray) --> [1,2,3,4,5]
 ```
 
 ## 2
